@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yujian Lee - Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Yujian Lee's homepage" />
+    <link rel="icon" href="media/sleep.svg" />
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);
+      html {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        max-width: 100%;
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+        min-width: 375px;
+      }
+      a {
+        text-decoration: none;
+        color: #1772d0;
+        cursor: pointer;
+      }
+      a:hover {
+        color: #f09228;
+      }
+      strong {
+        font-weight: 400;
+      }
+      header {
+        font-size: 15px;
+        min-height: 273px;
+        padding: 20px;
+        margin: 8px 20px;
+        padding-right: 220px;
+        position: relative;
+      }
+      header > picture {
+        position: absolute;
+        width: 200px;
+        height: 273px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      @media (max-width: 540px) {
+        header {
+          padding-right: 0;
+        }
+        header > picture {
+          position: static;
+          display: block;
+          margin: auto;
+        }
+      }
+      .self-intro-name {
+        padding: 14px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+      }
+      .self-intro-links {
+        text-align: center;
+      }
+      h1 {
+        font-size: 24px;
+        padding: 20px;
+        margin: 0;
+        font-weight: 400;
+      }
+      .award-heading {
+          margin-bottom: 10px;
+          padding: 20px;
+          font-weight: 400;
+      }
+      .award ul {
+          margin-top: 0;
+      }
+      .publication {
+        padding: 20px;
+        font-size: 15px;
+      }
+      .publication p {
+        margin: 0;
+      }
+      .publication > picture {
+        float: left;
+        object-fit: contain;
+        margin-right: 20px;
+        overflow: hidden;
+      }
+      .publication > picture > img {
+        transition: transform ease-in-out .3s;
+      }
+      .publication > picture > img:hover {
+        transform: scale(1.1);
+      }
+      .publication .title {
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .publication .authors {
+        margin-bottom: 5px;
+      }
+      .publication .venue {
+        margin-bottom: 5px;
+      }
+      .publication .links {
+        margin-bottom: 5px;
+      }
+      .publication .link::before {
+        content: "[";
+      }
+      .publication .link::after {
+        content: "]";
+      }
+      .publication .link {
+        margin-right: 3px;
+      }
+      .publication .desc {
+        margin-top: 14px;
+        font-size: 14px;
+      }
+      footer {
+        text-align: right;
+        padding: 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="self-intro-name">Yujian Lee (李宇健)</div>
+      <picture>
+        <!-- <source srcset="/media/IDPhoto.avif" type="image/avif" /> -->
+        <img width="150" height="228" src="media/profile.jpg" alt="ID Photo" />
+      </picture>
+      <div>
+        <p> 
+          I am an undergraduate student majoring in
+          <a href="https://fst.uic.edu.cn/">Artificial Intelligence, Faculty of Science and Technology</a>, 
+          <a href="https://www.uic.edu.cn/">Beijing Normal University - Hong Kong Baptist University United International College, Guangdong Zhuhai</a>.
+        </p>
+        <p>
+          My research interests include but are not limited to <strong>Bioinformatics (Cell-cell interaction network reconstruction)</strong>, <strong>Computer Vision (Cross modal pedestrians re-identification)</strong>, <strong>Data Minning (Efficient and fast clustering algorithm)</strong>, and <strong>AI for Science</strong>.
+        </p>
+        <div class="self-intro-links">
+          <a href="mailto:r130034019@mail.uic.edu.cn">Email</a>
+          &nbsp;|&nbsp;
+          <a href="https://scholar.google.com.hk/citations?hl=zh-CN&view_op=list_works&gmla=AKKJWFcmwac7xgVWTGDRmTo9bOvCHEP3MIvCQSX1h_px2PbrXBCEDFhaXYKPH5E-V9Rzy-McsuPKzt8xjSbHWi_Uz2w9XOk&user=GMnBrsUAAAAJ">Google Scholar</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/Yujian-Lee">GitHub</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Selected Publications</h1>
+      <div class="publication">
+        <picture>
+          <img src="media/jmb.png" width="150" height="150 " alt="LHNet: A Low-cost Hybrid Network for Single Image Dehazing" />
+        </picture>
+        <div>
+          <p class="title">TENET: Triple-enhancement based
+            graph neural network for cell-cell
+            interaction network reconstruction
+            from spatial transcriptomics</p>
+          <div class="authors">
+            <strong>Yujian Lee</strong>,</span>
+            <a href="https://github.com/Cheliosoops">Yongqi Xu</a>,</span>
+            Peng Gao,</span>
+            <a href="https://staff.uic.edu.cn/jiaxingchen/en"> Jiaxing Chen</a></span>
+          </div>
+          <p class="venue">Journal of Molecular Biology <strong>(JMB)</strong>, 2024</p>
+          <div class="links">
+            <span class="link"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0022283624001384">Paper</a></span>
+          </div>
+          <p class="desc">
+            We propose Triple-Enhancement based Graph Neural Network (TENET), in which three progressive enhancement mechanisms build upon each other to create a cumulative effect.
+          </p>
+        </div>
+      </div>
+
+      <div class="publication">
+        <picture>
+          <img src="media/LSROM.png" width="150" height="150 " alt="LSROM: Learning Self-Refined Organizing Map for Fast Imbalanced Streaming Data Clustering" />
+        </picture>
+        <div>
+          <p class="title">LSROM: Learning Self-Refined Organizing Map for Fast Imbalanced Streaming Data Clustering</p>
+          <div class="authors">
+            <a href="https://github.com/Cheliosoops">Yongqi Xu</a>,</span>
+            <strong>Yujian Lee</strong>,</span>
+            <a href="https://github.com/Rong194/">Rong Zou</a>,</span>
+            <a href="https://yzw.gdut.edu.cn/info/1120/5774.htm">Yiqun Zhang</a>,</span>
+            <a href="https://www.comp.hkbu.edu.hk/~ymc/">Yiu-ming Cheung</a></span>
+            
+          </div>
+          <p class="venue">IEEE Transactions on Neural Networks and Learning System <strong>(TNNLS)</strong>, 2024, under review</p>
+          <div class="links">
+            <span class="link"><a href="https://arxiv.org/abs/2404.09243">Paper</a></span>
+            <span class="link"><a href="https://github.com/Cheliosoops/LSROM">Code</a></span>
+          </div>
+          <p class="desc">
+            We propose an efficient approach called Learning Self-Refined Organizing Map (LSROM) to handle the imbalanced streaming data clustering problem. 
+          </p>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <picture>
+          <img src="media/BitQ.png" width="150" height="150 " alt="LHNet: A Low-cost Hybrid Network for Single Image Dehazing" />
+        </picture>
+        <div>
+          <p class="title">Bitwidth-aware Block Floating Point Quantization for Deep Neural Network Inference on Embedded Platforms</p>
+          <div class="authors">
+            <a href="https://github.com/Cheliosoops">Yongqi Xu *</a>,</span>
+            <strong>Yujian Lee *</strong>,</span>
+            Gao Yi,</span>
+            <a href="https://hpcds.gdut.edu.cn/Members/bss.htm"> Bosheng Liu</a>,</span>
+            Yikai Zhou,</span>
+            Xuandi Zeng,</span>
+            <a href="https://hpcds.gdut.edu.cn/info/1015/1102.htm">Peng Liu</a>,</span>
+            Qingguo zhou,</span>
+            <a href="https://hpcds.gdut.edu.cn/info/1015/1103.htm">jigang wu</a></span>
+          </div>
+          <p class="venue">ACM International Conference on Multimedia <strong>(ACM MM)</strong>, 2024, under review</p>
+          <div class="links">
+            <span class="link"><a href="https://github.com/Cheliosoops/BitQ">Code</a></span>
+          </div>
+          <p class="desc">
+            We develop a BFP-based bitwidth-ware analytical modeling framework (called “BitQ”) for the best implementation of DNN inference on embedded platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="publication">
+        <picture>
+          <img src="media/bmvc.png" width="150" height="150 " alt="LSROM: Learning Self-Refined Organizing Map for Fast Imbalanced Streaming Data Clustering" />
+        </picture>
+        <div>
+          <p class="title">DIAN: Dynamic Identity-Guided Attention Network for Visible-Infrared Person Re-identification</p>
+          <div class="authors">
+            Peng Gao,</span>
+            <strong>Yujian Lee</strong>,</span>
+            <a href="https://scholar.google.com/citations?hl=zh-TW&user=w3mzCiwAAAAJ">Hui Zhang</a>,</span>
+            Zailong Chen</a>,</span>
+            <a href="https://scholar.google.com/citations?hl=zh-TW&user=-OlNYSgAAAAJ">Xubo Liu</a>,</span>
+            Yiyang Hu</a>,</span>
+            Guquan Jing</a></span>
+            
+          </div>
+          <p class="venue">British Machine Vision Conference <strong>(BMVC)</strong>, 2024, under review</p>
+          <p class="desc">
+            We introduce a dynamic identity-guided attention network (DIAN) to mine identity-guided and modality-consistency embeddings, facilitating effective bridging of the gap between
+            different modalities.
+          </p>
+        </div>
+      </div>
+
+      
+      <h1 id="award-heading">Awards</h1>
+      <div class="award">
+          <ul>
+              <li><em>Chinese college Student Computer Design Competition (2023)</em></li>
+              <li><em>Higher Education Society Cup National mathematical modeling Contest (2023)</em></li>
+              <li><em>Guangdong Medical Valley Scholarship (2024)</em></li>
+          </ul>
+      </div>
+
+    </main>
+
+    <footer>
+      Last updated: Apr 2024<br>
+    </footer>
+  </body>
+</html>
